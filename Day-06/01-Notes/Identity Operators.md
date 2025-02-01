@@ -6,8 +6,8 @@ Identity operators in Python are used to compare the memory locations of two obj
 
 ## List of Identity Operators
 
-1. **is:** Returns `True` if both operands refer to the same object.
-2. **is not:** Returns `True` if both operands refer to different objects.
+1. **is:** Returns `True` if both operands refer to the same object/value.
+2. **is not:** Returns `True` if both operands refer to different objects/values.
 
 ### Examples
 
@@ -17,7 +17,7 @@ Identity operators in Python are used to compare the memory locations of two obj
 x = [1, 2, 3]
 y = x  # y now refers to the same object as x
 result = x is y
-# result will be True
+# result will be True because x and y are same.
 ```
 
 #### is not Operator
@@ -26,5 +26,7 @@ result = x is y
 a = "hello"
 b = "world"
 result = a is not b
-# result will be True
+# result will be True because a and b are not same.
+
+# these returns boolean values(either true or false)
 ```

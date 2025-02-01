@@ -32,8 +32,10 @@ second_element = my_tuple[1]  # Access the second element (2)
 ## Tuple Packing and Unpacking
 You can pack multiple values into a tuple and unpack them into separate variables.
 ```python
-coordinates = (3, 4)
-x, y = coordinates  # Unpack the tuple into x and y (x=3, y=4)
+coordinates = (3, 4) 
+#coordinate is a tuple with values 3 and 4.
+x, y = coordinates  # Unpack the tuple into x and y (x=3, y=4).
+# assigning 3 and 4 to x and y respectively.
 ```
 
 ## Concatenating Tuples
@@ -53,6 +55,7 @@ Tuples are often used to return multiple values from a function.
 ```python
 def get_coordinates():
     return (3, 4)
+    #(3, 4) is a tuple and these values are returned to get_coordinates()
 
 x, y = get_coordinates()  # Unpack the returned tuple (x=3, y=4)
 ```

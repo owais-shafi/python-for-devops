@@ -31,5 +31,9 @@ print(result)  # Output: 8
 x = 10
 y = 7
 result = x - y
-print(result)  # Output: 3
+print(result)  
+# Output: 3
+exponential = 7**10
+print(exponential)   
+# Output: 282475249
 ```
