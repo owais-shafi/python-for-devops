@@ -19,7 +19,6 @@ while True:
   if(choice=="n"):
     break
 
-
 # What does this command do:
 
 # find ~/Downloads -type d -name 'day2' -exec ls {} \;
