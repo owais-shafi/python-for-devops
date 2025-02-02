@@ -1,13 +1,22 @@
+# try to include find command to find the path of folders instead of asking user for path.
 import os
 while True:
-  folders = input("please enter the name of the folders with space in between:").split()
-
-  for folder in folders :
-    files=os.listdir(folder)
-    print("\n============Listing the files in folder: " + folder + "==============")
+  folders_paths = input("please enter the path of the folders with space in between:").split()
+  for folder in folders_paths :
+    try:
+     files=os.listdir(folder)
+     print("\n============ List of files in " + "'" + folder + "'" + " folder ==============\n")
+    except FileNotFoundError:
+      print("\n============ Wrong folder path or folder does not exist: " + folder + "==============\n")
+      continue
+    except PermissionError:
+      print("\n============Access denied: " + folder + "===============")
+      continue
+    i=0
     for file in files:
-      print(file)
-  choice=input("do you want to continue y/n: ")
+      i=i+1
+      print(i,":- "+file)
+  choice=input("\n>>>>>Do you want to continue y/n: ")
   if(choice=="n"):
     break
 
