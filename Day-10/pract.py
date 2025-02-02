@@ -12,10 +12,9 @@ while True:
     except PermissionError:
       print("\n============Access denied: " + folder + "===============")
       continue
-    i=0
-    for file in files:
-      i=i+1
-      print(i,":- "+file)
+    
+    for i in range(len(files)):
+      print(i+1,":- "+files[i])
   choice=input("\n>>>>>Do you want to continue y/n: ")
   if(choice=="n"):
     break
